@@ -1,11 +1,12 @@
 import varaibles.StringExample;
+import varaibles.StringLab;
 
 public class Main {
-
     //everything inside belongs to the Main class
 
     public static void main(String[] args) {
         //everything inside belongs to the main method
-        StringExample.show();
-}
+        //StringExample.show();
+        StringLab.show();
+    }
 }
