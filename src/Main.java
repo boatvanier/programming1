@@ -1,6 +1,7 @@
 import varaibles.StringExample;
 import varaibles.StringLab;
 import varaibles.VariableExample;
+import varaibles.VariableLab;
 
 
 public class Main {
@@ -10,7 +11,8 @@ public class Main {
         //everything inside belongs to the main method
         //StringExample.show();
         //StringLab.show();
-        VariableExample.show();
+        //VariableExample.show();
+        VariableLab.show();
 
 
 
