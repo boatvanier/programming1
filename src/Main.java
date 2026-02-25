@@ -1,7 +1,4 @@
-import varaibles.StringExample;
-import varaibles.StringLab;
-import varaibles.VariableExample;
-import varaibles.VariableLab;
+import varaibles.*;
 
 
 public class Main {
@@ -12,11 +9,8 @@ public class Main {
         //StringExample.show();
         //StringLab.show();
         //VariableExample.show();
-        VariableLab.show();
-
-
-
-
+        //VariableLab.show();
+        OperatorsExample.show();
 
     }
 }
