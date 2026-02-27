@@ -1,4 +1,7 @@
+import scanner.ScannerExamples;
 import varaibles.*;
+
+import java.util.Scanner;
 
 
 public class Main {
@@ -10,7 +13,8 @@ public class Main {
         //StringLab.show();
         //VariableExample.show();
         //VariableLab.show();
-        OperatorsExample.show();
+        //OperatorsExample.show();
 
+        ScannerExamples.show();
     }
 }
