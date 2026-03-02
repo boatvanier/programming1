@@ -88,9 +88,10 @@ public class ScannerExamples {
 //        System.out.println("program ends");
 //        sc.close();
 
-        Scanner sc = null;
         try {
-            sc = new Scanner(new File("test.txt"));
+//            sc = new Scanner(System.in); // user input
+//            sc = new Scanner("alice, 20, 5.5"); // string
+            Scanner sc = new Scanner(new File("test.txt")); //file
             String file=sc.nextLine();
             System.out.println(file);
             sc.close();
