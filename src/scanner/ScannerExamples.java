@@ -1,5 +1,6 @@
 package scanner;
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ScannerExamples {
@@ -37,28 +38,31 @@ public class ScannerExamples {
 
         String str = "Name:Alice,Age:25,Height:5.5,Country:CA";
         Scanner sc = new Scanner(str);
-        sc.useDelimiter(",");
-        String name;
-        sc.skip("Name:");
-        name = sc.next();
+        try {
+            sc.useDelimiter(",");
+            String name;
+            sc.skip("Name:");
+            name = sc.next();
 
-        sc.skip(",Age:");
-        int age = sc.nextInt();
+            sc.skip("Age:");
+            int age = sc.nextInt();
 
-        sc.skip(",Height:");
-        double height=0.0;
-        if (sc.hasNextDouble()) {
-            height = sc.nextDouble();
+            sc.skip(",Height:");
+            double height = 0.0;
+            if (sc.hasNextDouble()) {
+                height = sc.nextDouble();
+            }
+
+            sc.skip(",Country:");
+            String country = sc.next();
+
+            System.out.println("Name: " + name);
+            System.out.println("Age: " + age);
+            System.out.println("Height: " + height);
+            System.out.println("Country:" + country);
+        }catch (NoSuchElementException e) {
+            System.out.println("the pattern for skip is not found.");
         }
-
-        sc.skip(",Country:");
-        String country = sc.next();
-
-        System.out.println("Name: "+name);
-        System.out.println("Age: "+age);
-        System.out.println("Height: "+height);
-        System.out.println("Country:" +country);
-
         sc.close();
 
     }
