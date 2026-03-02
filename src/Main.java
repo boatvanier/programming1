@@ -14,7 +14,7 @@ public class Main {
         //VariableExample.show();
         //VariableLab.show();
         //OperatorsExample.show();
+        //ScannerExamples.show();
 
-        ScannerExamples.show();
     }
 }
