@@ -1,4 +1,5 @@
 import scanner.ScannerExamples;
+import scanner.ScannerLab;
 import varaibles.*;
 
 import java.io.File;
@@ -19,6 +20,11 @@ public class Main {
         //VariableLab.show();
         //OperatorsExample.show();
         //ScannerExamples.show();
+        ScannerLab.showQ1();
+        ScannerLab.showQ2();
+        ScannerLab.showQ3();
+        ScannerLab.showQ4();
+        ScannerLab.showQ5();
 
     }
 }
