@@ -68,13 +68,13 @@ public class ScannerLab {
         sc.skip("User:");
         String name = sc.next();
 
-        sc.skip("Age:");
+        sc.skip(",Age:");
         int age = 0;
         if (sc.hasNextInt()) {
             age = sc.nextInt();
         }
 
-        sc.skip("GPA:");
+        sc.skip(",GPA:");
         double gpa = 0.0;
         if (sc.hasNextDouble()) {
             gpa = sc.nextDouble();
