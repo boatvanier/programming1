@@ -3,6 +3,7 @@ import scanner.ScannerExamples;
 import scanner.ScannerLab;
 import varaibles.*;
 
+import javax.sound.midi.Soundbank;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
@@ -28,7 +29,10 @@ public class Main {
 //        ScannerLab.showQ5();
 
         //Conditional Statement lab
-        Lab.q1();
-        Lab.q2();
+        //Lab.q1();
+        //Lab.q2();
+        //Lab.q4();
+        //Lab.q5();
+
     }
 }

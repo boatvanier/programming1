@@ -66,4 +66,55 @@ public class Lab {
         sc.close();
 
     }
+
+    public static void q4() {
+        Scanner sc = new Scanner(System.in);
+        try {
+            System.out.print("enter a numeric grade (0–100): ");
+            int grade = sc.nextInt();
+
+            if (grade<0 || grade>100) {
+                System.out.println("invalid grade");
+            }else if (grade >= 90) {
+                System.out.println("Grade: A");
+            }else if (grade >= 80) {
+                System.out.println("Grade: B");
+            }else if (grade >= 70) {
+                System.out.println("Grade: C");
+            }else if (grade >= 60) {
+                System.out.println("Grade: D");
+            }else {
+                System.out.println("failed.");
+            }
+        }catch (InputMismatchException e){
+            System.out.println("invalid input");
+        }
+        sc.close();
+
+    }
+
+    public static void q5() {
+        Scanner sc = new Scanner(System.in);
+        try {
+            System.out.println("Enter product code:");
+            String code = sc.nextLine();
+            String first = code.substring(0,1).toUpperCase();
+            switch(first){
+                case "E":
+                    System.out.println("Electronics");
+                    break;
+                case "F":
+                    System.out.println("Food");
+                    break;
+                case "L":
+                    System.out.println("Luxury");
+                    break;
+                default:
+                    System.out.println("unknow category");
+            }
+        }catch (Exception e) {
+            System.out.println("invalid product code");
+        }
+        sc.close();
+    }
 }
