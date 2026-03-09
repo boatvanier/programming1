@@ -1,3 +1,4 @@
+import conditional.Lab;
 import scanner.ScannerExamples;
 import scanner.ScannerLab;
 import varaibles.*;
@@ -20,11 +21,14 @@ public class Main {
         //VariableLab.show();
         //OperatorsExample.show();
         //ScannerExamples.show();
-        ScannerLab.showQ1();
-        ScannerLab.showQ2();
-        ScannerLab.showQ3();
-        ScannerLab.showQ4();
-        ScannerLab.showQ5();
+//        ScannerLab.showQ1();
+//        ScannerLab.showQ2();
+//        ScannerLab.showQ3();
+//        ScannerLab.showQ4();
+//        ScannerLab.showQ5();
 
+        //Conditional Statement lab
+        Lab.q1();
+        Lab.q2();
     }
 }
