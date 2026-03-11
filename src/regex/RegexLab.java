@@ -18,8 +18,9 @@ public class RegexLab {
 //    java: "^\\d{4}-\\d{2}-\\d{2}"
 //
 //    5, Password(at least 8 chars, 1 digit, 1 uppercase)
-//    (?=.*[A-Z](?=.*\d).*{8,})
-//    java: "^(?=.*[A-Z](?=.*\\d).*{8,})$"
+//    (?=) positive lookahead, it checks if the pattern exists ahead in the string
+//    (?=.*[A-Z])(?=.*\d).*{8,}
+//    java: "^(?=.*[A-Z])(?=.*\\d).*{8,}$"
 //
 //    6, Match hex color code
 //    #([A-Fa-f0-9]{6})
