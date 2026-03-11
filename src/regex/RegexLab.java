@@ -1,5 +1,7 @@
 package regex;
 
+import java.util.Scanner;
+
 public class RegexLab {
 //    1. Match exactly 5 digits
 //    \d{5}
@@ -25,5 +27,41 @@ public class RegexLab {
 //    6, Match hex color code
 //    #([A-Fa-f0-9]{6})
 //    java: "^#([A-Fa-f0-9]{6})$"
+
+    public static void q7() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter student Id: ");
+        String studentId = sc.nextLine();
+        if (studentId.matches("S\\d{5}")) {
+            System.out.println("Valid");
+        }else{
+            System.out.println("invalid");
+        }
+        sc.close();
+    }
+    public static void q8() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a sentence: ");
+        String s = sc.nextLine();
+        if (s.isBlank()) {
+            System.out.println("Empty!");
+        }else{
+            System.out.println(s.replaceAll("\\s+", " "));
+        }
+        sc.close();
+    }
+
+    public static void q9() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter email: ");
+        String email = sc.nextLine();
+        if (email.matches("[A-Za-z0-9._]+@[A-Za-z0-9]+\\.(com|net|org)")) {
+            System.out.println("Valid email");
+        }else{
+            System.out.println("invalid email");
+        }
+        sc.close();
+
+    }
 
 }
