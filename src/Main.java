@@ -36,6 +36,5 @@ public class Main {
         //Lab.q4();
         //Lab.q5();
 
-
     }
 }
