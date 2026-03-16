@@ -23,12 +23,13 @@ public class Main {
         //VariableExample.show();
         //VariableLab.show();
         //OperatorsExample.show();
+
         //ScannerExamples.show();
-//        ScannerLab.showQ1();
-//        ScannerLab.showQ2();
-//        ScannerLab.showQ3();
-//        ScannerLab.showQ4();
-//        ScannerLab.showQ5();
+        //ScannerLab.showQ1();
+        //ScannerLab.showQ2();
+        //ScannerLab.showQ3();
+        //ScannerLab.showQ4();
+        //ScannerLab.showQ5();
 
         //Conditional Statement lab
         //Lab.q1();
