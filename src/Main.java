@@ -1,4 +1,6 @@
 import conditional.Lab;
+import loops.ForLoops;
+import loops.WhileLoops;
 import scanner.ScannerExamples;
 import scanner.ScannerLab;
 import varaibles.*;
@@ -37,5 +39,6 @@ public class Main {
         //Lab.q4();
         //Lab.q5();
 
+        WhileLoops.labQ1();
     }
 }
