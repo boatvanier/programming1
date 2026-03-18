@@ -39,6 +39,21 @@ public class ForLoops {
                 System.out.println(n + " * " + i + " = " + n * i);
             }
         }
+//        int count = 5;
+//sum
+//        int sum = 0;
+//        for(int i=1; i<=count; i++) {
+//            sum += i; // sum = sum+i;
+//        }
+//        System.out.println(sum);
+//        System.out.println((double)sum/count );
+//factorial
+//        int f = 1;
+//        for (int i=1; i<=count; i++) {
+//            f *= i; // f = f*i;
+//        }
+//        System.out.println(f);
+
 
     }
     public static void labQ1() {
@@ -92,5 +107,69 @@ public class ForLoops {
             }
             System.out.println();
         }
+    }
+    public static void labQ4() {
+        for(int row=1; row<=4; row++){
+            for(int col=1; col<=5; col++){
+                System.out.print("T" + row + col+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void labQ5() {
+        Scanner sc = new Scanner(System.in);
+        try{
+            System.out.println("Enter size: ");
+            int size = sc.nextInt();
+            for(int row=1; row<=size; row++){
+                for(int col=1; col<=size; col++){
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        }catch (InputMismatchException e){
+            System.out.println("invalid input");
+        }
+        sc.close();
+    }
+
+    public static void labQ6() {
+        for(int row=1; row<=5; row++){
+            for(int col=1; col<=row; col++){
+                System.out.print(row);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void labQ7() {
+        int size = 8;
+        for(int row=0; row<size; row++){
+            for(int col=0; col<size; col++){
+                if (row%2==0) {
+                    System.out.print("# ");
+                }else if(col!=0){
+                    System.out.print(" #");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void labQ8() {
+        Scanner sc = new Scanner(System.in);
+        double total = 0;
+        try {
+            for(int i=1; i<=5; i++){
+                System.out.print("Item "+i+" price: ");
+                double price = sc.nextDouble();
+
+                total += price;
+            }
+        }catch (InputMismatchException e ){
+            System.out.println("invalid input");
+        }
+        System.out.println("Total price: " + total);
+        sc.close();
     }
 }
