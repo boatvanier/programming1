@@ -18,14 +18,20 @@ public class MenuProgram
         sc.nextLine();
         System.out.println("Enter confirmation word YES:");
         String confirm = sc.nextLine();
-
+        //int passcode;
         if (confirm.equals("YES")) {
             switch (choice) {
                 case 1:
-                    System.out.println(name + " selected option 1");
-
+                    System.out.println(name + " setup your pin: ");
+                    //passcode = sc.nextInt();
                     break;
                 case 2:
+//                    if (checkPin(passcode)) {
+//                        searchProduct();
+//                    }else {
+//                        exit;
+//                    }
+
                     System.out.println(name + " selected option 2");
                     break;
                 case 3:
