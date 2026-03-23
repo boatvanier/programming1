@@ -39,6 +39,44 @@ public class Main {
         //Lab.q4();
         //Lab.q5();
 
-        WhileLoops.labQ1();
+
+            printStars();
+            sayHello("Bo");
+            System.out.println("today is a good day");
+
+            for(int i=0; i<3; i++) {
+                printStars();
+            }
+
+            int x = 1;
+            int y = 2;
+            int result = sum(x,y);
+            System.out.println(result);
+
+            System.out.println(isEven(x));
+            System.out.println(isEven(y));
+        }
+
+        public static boolean isEven(int a) {
+//        if (a % 2 == 0) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+            return a % 2 == 0;
+
+        }
+        public static int sum(int a, int b) {
+            int c = a+b;
+            return c;
+        }
+        // wordWord camel case
+        public static void printStars() {
+            System.out.println("**********");
+        }
+
+        public static void sayHello(String name) {
+            System.out.println("hello!");
+            System.out.println("my name is " +name);
+        }
     }
-}
