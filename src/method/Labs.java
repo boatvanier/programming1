@@ -83,5 +83,23 @@ public class Labs {
         System.out.println("hello!");
         System.out.println("my name is " +name);
     }
+    public static int countDigit(int number) {
+        int count = 0;
+        number = Math.abs(number);
+        if (number == 0) {
+            return 1;
+        }
+
+        while (number > 0) {
+            number = number /10;
+            count ++;
+        }
+        return count;
+    }
+    public static int countDigitWithString(int number) {
+        number = Math.abs(number);
+        return String.valueOf(number).length();
+    }
+
 
 }
