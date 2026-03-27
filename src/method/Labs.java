@@ -100,6 +100,40 @@ public class Labs {
         number = Math.abs(number);
         return String.valueOf(number).length();
     }
+    public static int largestDigit(int number) {
+        number = Math.abs(number);
+        int largest = 0;
+        while (number > 0){
+            int current = number % 10;
+            if ( current > largest) {
+                largest = current;
+            }
+            number = number /10;
+        }
+        return largest;
+    }
+    public static boolean isPalindrome(int number) {
+        return number == reverseNumber(number);
+    }
+    // 59373
+    public static int reverseNumber(int number) {
+        number = Math.abs(number);
+        int reversed = 0;
+        while (number > 0) {
+            reversed = reversed* 10 + number%10;
+            //step1: reversed = 0 * 10 + 3 = 3
+            //step2: reversed = 3 * 10 + 7 = 37
+            //step3: reversed = 37*10 + 3 = 373
+            //step4: reversed = 373*10 + 9 = 3739
+            //step5: reversed = 3739*10 + 5 = 37395
+            number = number / 10;
+            //step1 number = 5937
+            //step2 number = 593
+            //step3 number = 59
+            //step4 number = 5
+            //step5 number = 0
+        }
 
-
+        return reversed;
+    }
 }
