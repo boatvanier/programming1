@@ -1,6 +1,7 @@
 import conditional.Lab;
 import loops.ForLoops;
 import loops.WhileLoops;
+import method.Examples;
 import scanner.ScannerExamples;
 import scanner.ScannerLab;
 import varaibles.*;
@@ -70,7 +71,14 @@ public class Main {
 //        int correctPin =1234;
 //        checkPin(correctPin);
 
+        //pass by value
+        Examples.passByValue();
+
+        //pass by reference
+        Examples.passByReference();
+
+        //method overloading
+        Examples.methodOverloading();
     }
 
-
-    }
+}
