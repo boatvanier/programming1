@@ -71,14 +71,39 @@ public class Main {
 //        int correctPin =1234;
 //        checkPin(correctPin);
 
-        //pass by value
-        Examples.passByValue();
+//        //pass by value
+//        Examples.passByValue();
+//
+//        //pass by reference
+//        Examples.passByReference();
+//
+//        //method overloading
+//        Examples.methodOverloading();
+//        int[] numbers = {1,9,3,10,5,8};
+//        System.out.println(numbers[3]);
+//
+        String[][] seats = {
+                {"Alice", " Bob", "Charles"},
+                {"Danny", "Zoe", " Bo"}
+        };
+        int[][] matrix = {
+                {1,2,3}, // row 0
+                {4,5,6}, // row 1
+                {7,8,9},  // row 2
+                {10,11,12},  // row 3
+        };
+//        System.out.println(matrix[2][1]);
+//        printOutArray(matrix[0]);
+        printOutArray(seats);
 
-        //pass by reference
-        Examples.passByReference();
-
-        //method overloading
-        Examples.methodOverloading();
+    }
+    public static void printOutArray(String[][] arr) {
+        for(int i=0; i<arr.length; i++) {
+            for(int j=0; j<arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
