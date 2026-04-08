@@ -9,6 +9,7 @@ import varaibles.*;
 import javax.sound.midi.Soundbank;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -82,28 +83,7 @@ public class Main {
 //        int[] numbers = {1,9,3,10,5,8};
 //        System.out.println(numbers[3]);
 //
-        String[][] seats = {
-                {"Alice", " Bob", "Charles"},
-                {"Danny", "Zoe", " Bo"}
-        };
-        int[][] matrix = {
-                {1,2,3}, // row 0
-                {4,5,6}, // row 1
-                {7,8,9},  // row 2
-                {10,11,12},  // row 3
-        };
-//        System.out.println(matrix[2][1]);
-//        printOutArray(matrix[0]);
-        printOutArray(seats);
 
-    }
-    public static void printOutArray(String[][] arr) {
-        for(int i=0; i<arr.length; i++) {
-            for(int j=0; j<arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
     }
 
 }
