@@ -83,6 +83,44 @@ public class Main {
 //        int[] numbers = {1,9,3,10,5,8};
 //        System.out.println(numbers[3]);
 //
+
+        String a = new String();
+        Car car1 = new Car();
+        Car car2 = new Car();
+        car1.brand = "Toyota";
+        car1.color = "White";
+        car1.speed = 100;
+        car2.brand = "Honda";
+        car2.color = "Black";
+        car2.speed = 120;
+        Car car3 = new Car("Mazda","red");
+        Car car4 = new Car("Ford", "Blue", 130);
+
+//        System.out.println(car1.speed);
+//        System.out.println(car2.speed);
+//        car1.speed = 110;
+//
+//        System.out.println(car1.speed);
+//        System.out.println(car2.speed);
+
+//        car1.displayInfo();
+//        car1.accelerate();
+//        car1.displayInfo();
+
+        Book book1;
+        book1 = new Book();
+        Book book2 = new Book("DB book", "Ada", 25);
+        book1.title = "Java book";
+        book1.author = "Thomas";
+        book1.price = 20;
+//        book2.title = "DB book";
+//        book2.author = "Ada";
+//        book2.price = 25;
+        book1.displayInfo();
+        book2.displayInfo();
+        book1.applyDiscount(0.2);
+        book1.displayInfo();
+        book2.displayInfo();
     }
 
 }
