@@ -84,50 +84,51 @@ public class Main {
 //        System.out.println(numbers[3]);
 //
 
-        Car car1 = new Car();
-        Car car2 = new Car();
-        car1.brand = "Toyota";
-        car1.color = "White";
-        car1.speed = 100;
-        car2.brand = "Honda";
-        car2.color = "Black";
-        car2.speed = 120;
-        Car car3 = new Car("Mazda","red");
-        Car car4 = new Car("Ford", "Blue", 130);
-
-        System.out.println(car1.speed);
-        System.out.println(car2.speed);
-        car1.speed = 110;
-
-        System.out.println(car1.speed);
-        System.out.println(car2.speed);
-
-        car1.displayInfo();
-        car1.accelerate();
-        car1.displayInfo();
-
-        System.out.println(Car.counter);
-        Car.showCounter();
-
-//            Product p1 = new Product();
-//            p1.displayProduct();
-//            Product p2 = new Product("Camera", 3000);
-//            p2.displayProduct();
+//        Car car1 = new Car();
+//        Car car2 = new Car();
+//        car1.brand = "Toyota";
+//        car1.color = "White";
+//        car1.speed = 100;
+//        car2.brand = "Honda";
+//        car2.color = "Black";
+//        car2.speed = 120;
+//        Car car3 = new Car("Mazda","red");
+//        Car car4 = new Car("Ford", "Blue", 130);
 //
-//            Customer c1 = new Customer("Jack", "jack@email.com");
-//            c1.displayCustomer();
-//            Customer c2 = new Customer();
-//            c2.displayCustomer();
-//            c2.name = "Rose";
-//            c2.email="rose@email.com";
-//            c2.displayCustomer();
+//        System.out.println(car1.speed);
+//        System.out.println(car2.speed);
+//        car1.speed = 110;
 //
-//            Order o1= new Order(p2,c2,2);
-//            o1.displayOrder();
-//            Order o2 = new Order(p2);
-//            o2.displayOrder();
-//            Order o3 = new Order(p1, c2, 1);
+//        System.out.println(car1.speed);
+//        System.out.println(car2.speed);
+//
+//        car1.displayInfo();
+//        car1.accelerate();
+//        car1.displayInfo();
+//
+//        System.out.println(Car.counter);
+//        Car.showCounter();
 
+        Product p1 = new Product();
+        p1.displayProduct();
+        Product p2 = new Product("Camera", 3000);
+        p2.displayProduct();
+
+        Customer c1 = new Customer("Jack", "jack@email.com");
+        c1.displayCustomer();
+        Customer c2 = new Customer();
+        c2.displayCustomer();
+        c2.name = "Rose";
+        c2.email="rose@email.com";
+        c2.displayCustomer();
+
+        Order o1= new Order(p2,c2,2);
+        o1.displayOrder();
+        Order o2 = new Order(p2);
+        o2.displayOrder();
+        Order o3 = new Order(p1, c2, 1);
+
+        Order.displaySystemStats();
     }
 
 }
