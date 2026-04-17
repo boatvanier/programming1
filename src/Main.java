@@ -1,3 +1,4 @@
+import oop.Category;
 import oop.Customer;
 import oop.Order;
 import oop.Product;
@@ -96,9 +97,13 @@ public class Main {
 //        Car.showCounter();
 
         Product p1 = new Product();
+        p1.setCategory(Category.HOME);
         p1.displayProduct();
-        Product p2 = new Product("Camera", 3000);
+        Product p2 = new Product("Camera", 3000, Category.ELECTRONICS);
         p2.displayProduct();
+        Product p3 = new Product("shirt", 50, Category.CLOTHING);
+        p3.displayProduct();
+
 
         Customer c1 = new Customer("Jack", "jack@email.com");
         c1.displayCustomer();
