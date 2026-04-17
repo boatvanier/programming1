@@ -1,20 +1,6 @@
-import conditional.Lab;
-import loops.ForLoops;
-import loops.WhileLoops;
-import method.Examples;
-import scanner.ScannerExamples;
-import scanner.ScannerLab;
-import varaibles.*;
-
-import javax.sound.midi.Soundbank;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Arrays;
-import java.util.InputMismatchException;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import oop.Customer;
+import oop.Order;
+import oop.Product;
 
 
 public class Main {
@@ -118,8 +104,11 @@ public class Main {
         c1.displayCustomer();
         Customer c2 = new Customer();
         c2.displayCustomer();
-        c2.name = "Rose";
-        c2.email="rose@email.com";
+        c2.setName("Rose");
+        c2.setEmail("rose@gmail.com");
+//        c2.name = "Rose";
+//        c2.email="rose@email.com";
+        System.out.println(c2.getName());
         c2.displayCustomer();
 
         Order o1= new Order(p2,c2,2);
