@@ -1,7 +1,5 @@
-import oop.Category;
-import oop.Customer;
-import oop.Order;
-import oop.Product;
+import animal.Animal;
+import animal.Species;
 
 
 public class Main {
@@ -96,33 +94,40 @@ public class Main {
 //        System.out.println(Car.counter);
 //        Car.showCounter();
 
-        Product p1 = new Product();
-        p1.setCategory(Category.HOME);
-        p1.displayProduct();
-        Product p2 = new Product("Camera", 3000, Category.ELECTRONICS);
-        p2.displayProduct();
-        Product p3 = new Product("shirt", 50, Category.CLOTHING);
-        p3.displayProduct();
+//        Product p1 = new Product();
+//        p1.setCategory(Category.HOME);
+//        p1.displayProduct();
+//        Product p2 = new Product("Camera", 3000, Category.ELECTRONICS);
+//        p2.displayProduct();
+//        Product p3 = new Product("shirt", 50, Category.CLOTHING);
+//        p3.displayProduct();
+//
+//
+//        Customer c1 = new Customer("Jack", "jack@email.com");
+//        c1.displayCustomer();
+//        Customer c2 = new Customer();
+//        c2.displayCustomer();
+//        c2.setName("Rose");
+//        c2.setEmail("rose@gmail.com");
+////        c2.name = "Rose";
+////        c2.email="rose@email.com";
+//        System.out.println(c2.getName());
+//        c2.displayCustomer();
+//
+//        Order o1= new Order(p2,c2,2);
+//        o1.displayOrder();
+//        Order o2 = new Order(p2);
+//        o2.displayOrder();
+//        Order o3 = new Order(p1, c2, 1);
+//
+//        Order.displaySystemStats();
 
-
-        Customer c1 = new Customer("Jack", "jack@email.com");
-        c1.displayCustomer();
-        Customer c2 = new Customer();
-        c2.displayCustomer();
-        c2.setName("Rose");
-        c2.setEmail("rose@gmail.com");
-//        c2.name = "Rose";
-//        c2.email="rose@email.com";
-        System.out.println(c2.getName());
-        c2.displayCustomer();
-
-        Order o1= new Order(p2,c2,2);
-        o1.displayOrder();
-        Order o2 = new Order(p2);
-        o2.displayOrder();
-        Order o3 = new Order(p1, c2, 1);
-
-        Order.displaySystemStats();
+        Animal dog = new Animal(30, Species.DOG, "Doggy", "A001");
+        Animal cat = new Animal(20, Species.CAT, "Meow", "A002");
+        dog.displayInfo();
+        dog.loseWeightByPercentage(20);
+        dog.displayInfo();
+        System.out.println("total animals: " +Animal.getAnimalCount());
     }
 
 }
