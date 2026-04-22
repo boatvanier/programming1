@@ -1,5 +1,10 @@
 import animal.Animal;
 import animal.Species;
+import oop.Bank;
+import oop.BankAccount;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Main {
@@ -122,12 +127,44 @@ public class Main {
 //
 //        Order.displaySystemStats();
 
-        Animal dog = new Animal(30, Species.DOG, "Doggy", "A001");
-        Animal cat = new Animal(20, Species.CAT, "Meow", "A002");
-        dog.displayInfo();
-        dog.loseWeightByPercentage(20);
-        dog.displayInfo();
-        System.out.println("total animals: " +Animal.getAnimalCount());
+//        Animal dog = new Animal(30, Species.DOG, "Doggy", "A001");
+//        Animal cat = new Animal(20, Species.CAT, "Meow", "A002");
+//        dog.displayInfo();
+//        dog.loseWeightByPercentage(20);
+//        dog.displayInfo();
+//        System.out.println("total animals: " +Animal.getAnimalCount());
+
+        BankAccount account1 = new BankAccount("000001", 0);
+        BankAccount account2 = new BankAccount("000002", 10);
+        BankAccount account3 = new BankAccount("000003", 15);
+
+        BankAccount[] accounts = new BankAccount[3];
+        accounts[0] = account1;
+        accounts[1] = account2;
+        accounts[2] = account3;
+
+        double total = 0;
+        for (BankAccount account : accounts) {
+            account.deposit(100);
+            total += accounts[0].getBalance();
+        }
+        System.out.println(total);
+
+        try {
+            account3.deposit(-10);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println(account1.getBalance());
+        System.out.println(account2.getBalance());
+
+        Bank bank = new Bank(accounts);
+        bank.transferMoney(account1, account2, 2);
+
+        System.out.println(account1.getBalance());
+        System.out.println(account2.getBalance());
+
     }
 
 }
