@@ -21,6 +21,16 @@ public class Book {
         this.price = price;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        if (price < 0) {
+            throw new IllegalArgumentException("Invalid price");
+        }
+        this.price = price;
+    }
     public void displayInfo() {
         System.out.println("oop.Book Title: "+title
                 + ", author: " + author + ", current price: " + price);

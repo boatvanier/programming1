@@ -61,7 +61,7 @@ public class Animal {
     }
 
     public void setWeight(double weight) {
-        if (weight > 0) {
+        if (weight >= 0) {
             this.weight = weight;
         }else{
             System.out.println("weight is invalid");

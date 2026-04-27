@@ -14,7 +14,11 @@ public class Product {
     }
 
     public Product(String name, double price, Category category) {
-        this.name = name;
+        if (isNameValid(name)) {
+            this.name = name;
+        } else {
+            this.name = "unknow";
+        }
         this.price = price;
         this.category = category;
         totalProducts++;
@@ -24,7 +28,10 @@ public class Product {
         return name;
     }
     public void setName(String name){
-        this.name = name;
+
+        if(isNameValid(name)) {
+            this.name = name;
+        }
     }
     public double getPrice() {
         return price;
@@ -52,5 +59,12 @@ public class Product {
                 + ", price: " + this.price
         + ", category: " + this.category);
         System.out.println("currently there are totally " + totalProducts + " products");
+    }
+
+    private boolean isNameValid(String name){
+        if (name != null && !name.isBlank()) {
+            return true;
+        }
+        return false;
     }
 }

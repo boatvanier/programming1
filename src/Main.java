@@ -1,9 +1,6 @@
 import animal.Animal;
 import animal.Species;
-import oop.Bank;
-import oop.BankAccount;
-import oop.Category;
-import oop.Product;
+import oop.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -173,6 +170,7 @@ public class Main {
         p.setName("decoration");
         p.setPrice(20);
         p.displayProduct();
+
     }
 
 }
