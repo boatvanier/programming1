@@ -43,7 +43,7 @@ public class Product {
         this.category = category;
     }
 
-    public int getTotalProducts() {
+    public static int getTotalProducts() {
         return totalProducts;
     }
 
@@ -51,5 +51,6 @@ public class Product {
         System.out.println("Product: " + this.name
                 + ", price: " + this.price
         + ", category: " + this.category);
+        System.out.println("currently there are totally " + totalProducts + " products");
     }
 }

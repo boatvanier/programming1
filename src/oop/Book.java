@@ -1,29 +1,31 @@
+package oop;
+
 public class Book {
-    String title;
-    String author;
-    double price;
+    private String title;
+    private String author;
+    private double price;
 
     //default
-    Book() {
+    public Book() {
     }
 
     //Parameterized Constructor
-    Book(String title, String author){
+    public Book(String title, String author){
         this.title = title;
         this.author = author;
         this.price = 0;
     }
-    Book(String title, String author, double price){
+    public Book(String title, String author, double price){
         this.title = title;
         this.author = author;
         this.price = price;
     }
 
-    void displayInfo() {
-        System.out.println("Book Title: "+title
+    public void displayInfo() {
+        System.out.println("oop.Book Title: "+title
                 + ", author: " + author + ", current price: " + price);
     }
-    void applyDiscount(double percentage) {
+    public void applyDiscount(double percentage) {
         price = price * (1-percentage);
     }
 }

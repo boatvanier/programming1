@@ -1,8 +1,10 @@
+package oop;
+
 public class Car {
-    String brand;
-    String color;
-    int speed;
-    static int counter;
+    private String brand;
+    private String color;
+    private int speed;
+    private static int counter;
 
     public Car() {
         counter++;
@@ -22,14 +24,14 @@ public class Car {
         counter++;
     }
 
-    void displayInfo() {
+    public void displayInfo() {
         System.out.println("This is a " + color + " " + brand + " with a speed of "+ speed + "km/hr");
     }
-    void accelerate() {
+    public void accelerate() {
         speed += 10;
     }
 
-    static void showCounter() {
+    public static void showCounter() {
         System.out.println("Totally " + counter + " cars are created.");
     }
 }

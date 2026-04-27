@@ -2,6 +2,8 @@ import animal.Animal;
 import animal.Species;
 import oop.Bank;
 import oop.BankAccount;
+import oop.Category;
+import oop.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,16 +76,16 @@ public class Main {
 //        System.out.println(numbers[3]);
 //
 
-//        Car car1 = new Car();
-//        Car car2 = new Car();
+//        oop.Car car1 = new oop.Car();
+//        oop.Car car2 = new oop.Car();
 //        car1.brand = "Toyota";
 //        car1.color = "White";
 //        car1.speed = 100;
 //        car2.brand = "Honda";
 //        car2.color = "Black";
 //        car2.speed = 120;
-//        Car car3 = new Car("Mazda","red");
-//        Car car4 = new Car("Ford", "Blue", 130);
+//        oop.Car car3 = new oop.Car("Mazda","red");
+//        oop.Car car4 = new oop.Car("Ford", "Blue", 130);
 //
 //        System.out.println(car1.speed);
 //        System.out.println(car2.speed);
@@ -96,8 +98,8 @@ public class Main {
 //        car1.accelerate();
 //        car1.displayInfo();
 //
-//        System.out.println(Car.counter);
-//        Car.showCounter();
+//        System.out.println(oop.Car.counter);
+//        oop.Car.showCounter();
 
 //        Product p1 = new Product();
 //        p1.setCategory(Category.HOME);
@@ -165,6 +167,12 @@ public class Main {
         System.out.println(account1.getBalance());
         System.out.println(account2.getBalance());
 
+        System.out.println(Product.getTotalProducts());
+        Product p= new Product();
+        p.setCategory(Category.HOME);
+        p.setName("decoration");
+        p.setPrice(20);
+        p.displayProduct();
     }
 
 }
